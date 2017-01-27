@@ -1,4 +1,4 @@
-## H2 TwitterSentimentAnalysisVisualization
+## TwitterSentimentAnalysisVisualization
 A simple Sentiment analysis and visualization for analyzing the sentiment of three popular Airlines in Middle East: Qatar Airways, Emirates and Etihad. This project is for the 101 workshops by ArabWICQatar.
 
 Dependencies:
@@ -9,7 +9,7 @@ Pandas :- '''python pip install -U pandas '''
 NLTK :- '''python pip install -U nltk '''
 TextBlob :- '''python pip install -U textblob  '''
 
-### H3 Steps to run:
+### Steps to run:
 DATA COLLECTION
 1. Create a Twitter app and enter the app credentials in searchTweets.py file
 2. Create new folder, search-data and run the searchTweets.py script. searchTweets.csv file containing gathered tweets will be stored inside search-data folder
