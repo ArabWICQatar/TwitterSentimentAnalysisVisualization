@@ -7,10 +7,8 @@ Python 2.7
 
 Python modules: 
 
-Tweepy :- '''python pip install -U tweepy '''
-Pandas :- '''python pip install -U pandas '''
-NLTK :- '''python pip install -U nltk '''
-TextBlob :- '''python pip install -U textblob  '''
+Tweepy :- pip install -U tweepy
+TextBlob :- pip install -U textblob
 
 ### Steps to run:
 A. DATA COLLECTION
