@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+<script src="lib/jquery-3.1.1.js"></script>
+<script src="lib/highcharts.js"></script>
+</head>
+<body>
+<div id="container" style="width: 600px; height: 400px; margin: 0 auto"></div>
+
+<script>
+// highcharts implementation
+$.get('search-data/results.csv', function(csv) {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        data: {
+            csv: csv
+        },
+        title: {
+            text: 'Sentiment Distribution of Airlines'
+        },
+        xAxis: {
+            categories: [
+                'Qatar Airways',
+                'Emirates',
+                'Etihad Airways'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: '# of Tweets'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0">{point.y}</td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Positive',
+            data: [68, 111, 14]
+        }, {
+            name: 'Negative',
+            data: [12, 13, 14]
+
+        }, {
+            name: 'Neutral',
+            data: [50, 78, 42]
+
+        }]
+    });
+});
+</script>
+</body>
