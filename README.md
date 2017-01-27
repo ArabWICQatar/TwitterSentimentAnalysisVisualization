@@ -36,5 +36,5 @@ D. VISUALIZATION using Highcharts
 
 * The total positive, negative and neutral sentiment for each airline is computed in the computeResults.py . The results.csv stored in search-data folder has the number of totalTweets, positive tweets, negative tweets and neutral tweets by airline.
 
-* The files inside lib folder containing jquery and highcharts.js files are used to generate visualizations. Dobuleclik or open the results.html file in a browser to view the visualization for obtained sentiment results.
+* The files inside lib folder containing jquery and highcharts.js files are used to generate visualizations. Doubleclick or open the results.html file in a browser to view the visualization for obtained sentiment results.
 
