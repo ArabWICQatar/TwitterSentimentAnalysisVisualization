@@ -36,7 +36,7 @@ def search(keywords):
 
 #search("Qatar Airways") # to search one keyword at a time
 
-file = open('keywords.txt', 'r') # contains a list of keywords
+file = open('hashtags-keywords.txt', 'r') # contains a list of keywords
 queries = file.readlines()
 
 for q in queries:
